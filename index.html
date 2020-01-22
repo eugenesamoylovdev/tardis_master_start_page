@@ -1,0 +1,109 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <style>
+      
+    :root {
+        --bg-color: #fae9e7; 
+        --main-text-color: #666666;
+        --title-text-color: #faafa0;
+        --button-bg-color: #ffe489;
+        --button-bg-color-hover: #cedd81;
+    }
+
+    body{
+        color: var(--main-text-color);
+    }
+
+      button, button:active, button:focus {
+        outline: none;
+    }
+
+    .container {
+        width: auto;
+        max-width: 650px;
+        margin-top: 40px;
+        padding: 40px;
+        background-color: var(--bg-color);
+        
+    }
+    
+    .title{
+        text-align: center;
+        color:  var(--title-text-color);
+    }
+
+    .main_text{
+
+    }
+
+    .button{
+        width: 250px;
+        height: 60px;
+        background-color:var(--button-bg-color);
+        color: var(--main-text-color);
+        font-weight: 600;
+        border: var(--button-bg-color);
+        border-radius: 10px;
+        text-decoration: none;
+    }
+
+    .button:hover{
+        background-color:var(--button-bg-color-hover); 
+        text-decoration: none; 
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        transition: all 0.5s;  
+    }
+
+    .description{
+        width: 270px;
+        color: var(--main-text-color);
+        font-style: italic;
+        font-size: 14px;
+    }
+
+  </style>
+</head>
+
+<body>
+    <div class="container">
+        
+        <h2 class="title">Добро пожаловать!</h2><br>
+        <h5 class="main_text">Вас приветствует Помощник заполнения данных аккаунта</h5><br>
+        
+        <div class="row">
+            <div class="col-sm">
+                <button id="fillDetails" type="button" class="button">Данные реквизитов справочников</button>
+                <p class="description">Заполнение реквизитов справочников аккаунты, пользователи, базы и организации по аккаунту текущего пользователя</p>
+            </div>
+            <div class="col-sm">
+                <button id="enterStartData" type="button" class="button">Ввод начальных<br> данных</button>
+                <p class="description">Заполнение экспресс-проверок, начальных статусов регламентированных отчетов и данных налоговой нагрузки из баз аккаунта</p>
+            </div>
+          </div>
+
+    </div>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+  <script>
+
+    fillDetails.onclick = function(){
+        alert('fillDetails');
+    }
+
+    enterStartData.onclick = function(){
+        alert('enterStartData');
+    }     
+
+  </script>
+</body>
+
+</html>
