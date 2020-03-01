@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"/>
+    <style>
+      :root {
+        --button-text-color: #000080;
+        --btn-1: #b7e0fa;
+        --btn-2: #deee8f;
+        --btn-3: #fae790;
+        --btn-4: #ffc973;
+        --btn-5: #fdb6b7;
+        --btn-6: #a4ccff;
+        --btn-7: #ffd3e7;
+        --btn-8: #b5dcf7;
+        --btn-9: #d894db;
+        --btn-10: #94acf3;
+
+        --bt-tx-1: #000080;         /*Ультрамарин*/
+        --bt-tx-2: #0000CD;         /*Нейтрально-синий*/
+        --bt-tx-3: #00008B;         /*Темно-синий*/
+        --bt-tx-4: #483D8B;         /*Темно-грифельно синий*/
+        --bt-tx-5: #4682B4;         /*Синий со стальным оттенком*/
+        --bt-tx-6: #5F9EA0;         /*Серо-синий*/
+      }
+
+      body {
+        -moz-background-size: 100%;
+        -webkit-background-size: 100%;
+        -o-background-size: 100%;
+        background-size: 100%;
+      }
+
+      button,
+      button:active,
+      button:focus {
+        outline: none;
+      }
+
+      .row {
+        margin: 20px 0 0 0;
+      }
+
+      .button {
+        padding: 16px 20px 16px 52px;
+        display: flex;
+        width: 100%;
+        height: 120px;
+        color: var(--button-text-color);
+        font-weight: 600;
+        font-size: 20px;
+        border-radius: 10px;
+        text-decoration: none;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        opacity: 0.75;
+      }
+
+      .button:hover {
+        opacity: 1;
+        text-decoration: none;
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        transition: all 0.5s;
+      }
+
+      img{
+        height: 50px;
+        width: 50px;
+        left: 35px;
+        position: absolute;
+      }
+    </style>
+  </head>
+
+  <body>
+         
+      <div class="row">
+        <div class="col-4">
+          <button id="clickButton1" type="button" class="button" style="background-color: var(--btn-1)"><img src="https://beta-tardis.42clouds.com/media/icons/sys/btn1.png">АРМ Бухгалтера</button>
+        </div>
+        <div class="col-4">
+          <button id="clickButton2" type="button" class="button" style="background-color: var(--btn-2)"><img src="https://beta-tardis.42clouds.com/media/icons/sys/btn2.png">Расчеты организаций <br> с бюджетом</button>
+        </div>
+        <div class="col-4">
+          <button id="clickButton3" type="button" class="button" style="background-color: var(--btn-3)"><img src="https://beta-tardis.42clouds.com/media/icons/sys/btn3.png">Эффективность работы <br> бухгалтера</button>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-4">
+          <button id="clickButton4" type="button" class="button" style="background-color: var(--btn-4)"><img src="https://beta-tardis.42clouds.com/media/icons/sys/btn4.png">Управление доступами <br> в базы</button>
+        </div>
+        <div class="col-4">
+          <button id="clickButton5" type="button" class="button" style="background-color: var(--btn-5)"><img src="https://beta-tardis.42clouds.com/media/icons/sys/btn5.png">Налоговая нагрузка</button>
+        </div>
+        <div class="col-4">
+          <button id="clickButton6" type="button" class="button" style="background-color: var(--btn-6)"><img src="https://beta-tardis.42clouds.com/media/icons/sys/btn6.png">Аудит качества <br> ведения учета</button>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-4">
+          <button id="clickButton7" type="button" class="button" style="background-color: var(--btn-7)"><img src="https://beta-tardis.42clouds.com/media/icons/sys/btn7.png">Помощник заполнения <br> сервиса</button>
+        </div>
+        <div class="col-4">
+          <button id="clickButton8" type="button" class="button" style="background-color: var(--btn-8)"><img src="https://beta-tardis.42clouds.com/media/icons/sys/btn8.png">Контроль атрибутирования <br> файлов</button>
+        </div>
+        <div class="col-4">
+          <button id="clickButton9" type="button" class="button" style="background-color: var(--btn-9)"><img src="https://beta-tardis.42clouds.com/media/icons/sys/btn9.png">Результаты кросс-аудита</button>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-4"></div>
+        <div class="col-4"></div>
+        <div class="col-4">
+          <button id="clickButton10" type="button" class="button" style="background-color: var(--btn-10)"><img src="https://beta-tardis.42clouds.com/media/icons/sys/btn10.png">Оценка аудиторов</button>
+        </div>
+      </div>
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/69b8af6974.js" crossorigin="anonymous" ></script>
+
+    <script>
+      function getIP() {
+        var xhr = new XMLHttpRequest();
+        var result = "";
+        xhr.open("GET", "https://ipapi.co/ip", false);
+        xhr.send();
+        if (xhr.status == 200) {
+          result = xhr.responseText;
+        }
+        return result;
+      }
+    </script>
+  </body>
+</html>
